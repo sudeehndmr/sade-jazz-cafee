@@ -1,0 +1,730 @@
+body {
+  margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Georgia, serif;
+
+    }
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-weight: normal;
+    color: #c9a227;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 70px;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.4);
+}
+  
+header img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+  color: white;
+  text-decoration:none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  color: #c9a227;
+  letter-spacing: 3px;
+}
+
+.hero {
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("images/jazz-background.jpg");
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-top: 20px;
+}
+
+.menu-button {
+  margin-top: 30px;
+  padding: 14px 35px;
+
+  border: 1px solid #c9a227;
+  border-radius: 3px;
+
+  color: #c9a227;
+
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+
+  transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #c9a227;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(201,162,39,0.3);
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hero h1,
+.hero p {
+  text-shadow: 2px 2px 8px black;
+}
+
+.hero p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #c9a227;
+  margin: 20px auto 0;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 25px;
+  }
+  
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  header img {
+    width: 90px;
+  }
+
+}
+
+  .hero {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .hero h1 {
+    text-shadow: 0 0 15px rgba(201, 162, 39, 0.35);
+  }
+  nav a {
+    position: relative;
+  }
+
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background-color: #c9a227;
+    transition: 0.3s;
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  .menu-button:hover {
+    box-shadow: 0 0 15px rgba(201, 162, 39, 0.4);
+  }
+
+  .hero {
+    padding-top: 20px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .hero p {
+    color: #ddd;
+  }
+
+  .menu-button:active {
+    transform: scale(0.97);
+  }
+
+  .about {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #111;
+    border-top: 1px solid rgba(201, 162, 39, 0.2);
+  }
+
+  .about {
+    box-sizing: border-box;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about h2 {
+    font-size: 40px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    color: #c9a227;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+  }
+
+  .about p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+  }
+
+  .about p::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #c9a227;
+    margin: 30px auto 0;
+}
+
+.about-line {
+  width: 50px;
+  height: 1px;
+  background-color: #c9a227;
+  margin-bottom: 25px;
+}
+
+.menu {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #0b0b0b;
+}
+
+.menu h2 {
+  font-size: 40px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  color: #c9a227;
+  letter-spacing: 3px;
+  margin: 0 0 50px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  width: 280px;
+  padding: 35px 25px;
+  border: 1px solid rgba(201,162,39,0.3);
+  background-color: #111;
+  box-sizing: border-box;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  color: #c9a227;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
+.menu-item p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.menu-item span {
+  display: block;
+  margin-top: 20px;
+  color: #c9a227;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.menu-item {
+  transition: 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-8px);
+  border-color: #c9a227;
+  box-shadow: 0 10px 30px rgba(201, 162, 39, 0.15);
+}
+
+.events {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #111;
+}
+
+.events h2 {
+  font-size: 40px;
+  color: #c9a227;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.events p {
+  color: #ccc;
+  font-size: 18px;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba (201, 162, 39, 0.3);
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  color: #c9a227;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.artist img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.artist-info {
+    text-align: left;
+    max-width: 400px;
+}
+
+.artist-info h3 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.artist-info p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.events {
+    padding: 80px 20px;
+    text-align: center;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/jazz-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.events h2 {
+    font-size: 40px;
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.artist img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.artist-info {
+    text-align: left;
+    max-width: 400px;
+}
+
+.artist-info h3 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.artist-info p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+  url("images/jazz-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.contact h2 {
+  font-size: 40px;
+  color: #c9a227;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  color: #ccc;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button {
+  margin: 20px;
+  padding: 12px 25px;
+  background-color: transparent;
+  color: #c9a227;
+  border: 1px solid #c9a227;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c9a227;
+  color: black;
+}
+
+.dessert-title {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #c9a227;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.dessert-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  }
+
+  .about-content img {
+    width: 420px;
+    height: 320px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border: 2px solid #c9a227;
+  }
+
+  .about-text {
+    max-width: 450px;
+    text-align: left;
+  }
+
+  .about-text h3,
+  .about-video h3 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  .about-text p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .about-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 900px;
+  }
+
+  .about-gallery img {
+    width: 45%;
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border: 2px solid #c9a227;
+  }
+
+  .about-video {
+    max-width: 700px;
+    margin: 50px auto;
+  }
+
+  .about-video video {
+    width: 100%;
+    border: 2px solid #c9a227;
+  }
+
+  @media (max-width: 768px) {
+    .about-content
+    .about-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-content img,
+    .about-gallery img {
+      width: 100%;
+      max-width: 420px;
+    }
+
+  }
+
+  .friday-specials {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+
+  .friday-specials h2 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+
+  .cocktail-poster {
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    border: 2px solid #c9a227;
+  }
+
+/* Events Page */
+
+.events {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.events h2 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.events > p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.artist img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid #c9a227;
+}
+
+.artist-info {
+    max-width: 400px;
+}
+
+.artist-info h3 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.artist-info p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .artist {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .artist img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+  }
+
+  .event-details {
+    max-width: 700px;
+    margin: 60px auto 30px;
+    padding: 30px;
+    border-top: 1px solid #c9a227;
+    border-bottom: 1px solid #c9a227;
+    text-align: center;
+    background: rgba(201, 162, 39, 0.05);
+  }
+
+  .event-details h3 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  .event-details p {
+    color: #ccc;
+    line-height: 1.8;
+  }
+
+  .location {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .location h2 {
+    color: #c9a227;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  .location p {
+    color: #ccc;
+    margin-bottom: 25px;
+  }
+
+  .location iframe {
+    border: 2px solid #c9a227 !important;
+  }
+
+/* Same background for About and Menu */
+
+.about,
+.menu {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("images/jazz-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
